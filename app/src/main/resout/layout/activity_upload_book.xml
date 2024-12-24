@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Book Title" />
+
+    <EditText
+        android:id="@+id/editTextAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Author" />
+
+    <Button
+        android:id="@+id/buttonUploadCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Cover" />
+
+    <Button
+        android:id="@+id/buttonUploadContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Content (txt)" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>

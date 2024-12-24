@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/readPage">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/book_read_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="false"
+                android:scrollbars="none"
+                android:textSize="50px"
+                android:visibility="visible"
+                android:text="asdfasfasfasf"
+                />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:indeterminate="true"
+                android:indeterminateBehavior="cycle" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"></androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--    android:id="@+id/readPage">-->
+
+
+    <!--    <android.support.v4.widget.DrawerLayout-->
+    <!--        android:id="@+id/drawer_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <FrameLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/book_read_view"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+
+    <!--                android:fadeScrollbars="false"-->
+
+    <!--                android:scrollbars="none"-->
+    <!--                android:textSize="28px"-->
+    <!--                android:visibility="gone" />-->
+
+    <!--            <ProgressBar-->
+    <!--                android:id="@+id/progress_bar"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center_vertical"-->
+    <!--                android:indeterminate="true"-->
+    <!--                android:indeterminateBehavior="cycle" />-->
+
+    <!--        </FrameLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="start"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <android.support.design.widget.TabLayout-->
+    <!--                android:id="@+id/tabLayout_drawer"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="#ffffff"-->
+    <!--                app:tabGravity="fill"-->
+    <!--                app:tabMode="fixed"-->
+    <!--                app:tabTextAppearance="@style/MyTabLayoutTextAppearance" />-->
+
+    <!--            <android.support.v4.view.ViewPager-->
+    <!--                android:id="@+id/viewPager_drawer"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="#ffffff"></android.support.v4.view.ViewPager>-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </android.support.v4.widget.DrawerLayout>-->
+
+
+    <!--</RelativeLayout>-->
